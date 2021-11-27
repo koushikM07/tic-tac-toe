@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+nav{
+    background-color: aqua;
+    color: rgb(255, 7, 160);
+    height: 70px;
+    font-size: 35px;
+    align-items: center;
+    padding: 0 30px;
+    font-family: 'Comforter Brush', cursive;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameConatiner{
+    background-color: rgb(245, 255, 100);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 ,10vw);
+    grid-template-rows: repeat(3 ,10vw);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{background-color: rgb(215, 255, 243);}
+
+.gameInfo{
+    padding: 0 50px;
+    font-family: 'Comforter Brush', cursive;
+}
+.br-0{
+    border-right: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 25px;
+    padding: 6px 14px;
+    background: blueviolet;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .gameConatiner{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+  }
